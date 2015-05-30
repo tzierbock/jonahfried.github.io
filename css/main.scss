@@ -1,0 +1,281 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Oswald", sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+// color-scheme
+$color-main:	   #E5730B;	
+$color-secondary:  #ABABAB;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1200px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+
+// Landing page styling
+.landing-page {
+	width: 100%;
+	height: 100vh;
+	background: url(https://www.dropbox.com/s/8hamoia1p32f66v/titleimage.jpg?raw=1) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.center-wrapper {
+	position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 200px;
+    margin-top: -100px;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+
+.enter-button {
+	position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    background-color: $color-main;
+    border-radius: 50%;
+}
+
+.enter-button a {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin-left: -100px;
+    margin-top: -45px;
+
+    text-align: center;
+    font-size: 4em;
+    color: $color-secondary;
+
+    font-family: "Oswald", sans-serif bold;
+}
+
+.landing-page:after {
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 4px solid $color-secondary; /*change these values to suit your liking*/
+}
+
+.showcase-wrapper {
+	width: 100%;
+	display: inline-block;
+  	position: relative;
+	overflow: hidden;
+}
+
+.showcase-wrapper:before {
+  padding-top: 40%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.showcase-wrapper-content {
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.showcase-wrapper img {
+	clip: inset(10px 20px 30px 40px);
+}
+
+.text-crop {
+	width: 40%;
+	height: 200px;
+	margin: 0;
+	overflow: hidden;
+}
+
+.title-jonah {
+	width: 400px;
+    height: 300px;
+    margin: -75px 0 0 -100px;
+}
+
+.socialmedia-buttons-wrapper {
+	position: absolute;
+	right: 16px;
+	top: 2px;
+	z-index: 4;
+}
+
+$socialmedia-button-size:	50px;
+$socialmedia-button-margin: 2px;
+.socialmedia-button {
+	width: $socialmedia-button-size;
+	height: $socialmedia-button-size;
+	margin: $socialmedia-button-margin;
+
+	background-color: grey;
+}
+
+.page-links h2 {
+	display: block;
+	background-color: $color-main;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+	padding: 4px;
+	font-family: $base-font-family normal;
+}
+
+.page-links {
+	text-decoration: none !important;
+}
+
+.page-links:hover{
+	text-decoration: none !important;
+}
+
+.description-container {
+	display: block;
+	background-color: $color-main;
+	font-family: $base-font-family normal;
+	background-clip: content-box;
+}
+
+.description-container h3 {
+	display: block;
+	background-color: $color-main;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+	padding: 4px;
+	font-family: $base-font-family normal;
+}
+
+.description-container p {
+	margin: 6px;
+}
+
+.site-section {
+	height: 300px;
+	overflow: hidden;
+}
+
+$popover-color: rgba(30, 30, 30, 0.8);
+.pop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0) 50%, $popover-color 50%, $popover-color);
+	transition: all 0.2s ease;
+	background-size: 100% 210%;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-clip: content-box;
+}
+
+.pop h1 {
+	position: relative;
+	width: 1em;
+    font-size: 25px;
+    letter-spacing: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: $base-font-family bold;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+    visibility: hidden;
+    top: 100%;
+}
+
+.pop:hover {
+  background-position: 100% 100%;
+  text-decoration: none !important;
+}
+
+.pop:hover h1 {
+	color: white;
+	visibility: visible;
+	top: 0;
+}
+
+.section-gallery {
+	background: url(/img/gallery.jpg) no-repeat center center;
+	background-clip: content-box;
+	background-size: cover;
+}
+
+.section-design {
+	background: url(/img/design.png) no-repeat center center;
+	background-clip: content-box;
+	background-size: cover;
+}
+
+.section-digital {
+	background: url(/img/digital.jpg) no-repeat center center;
+	background-clip: content-box;
+	background-size: cover;
+}
+
+.nopadding {
+	padding-left: 0 !important;
+	padding-right: 0 !important; 
+}
