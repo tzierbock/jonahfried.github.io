@@ -395,16 +395,20 @@ $popover-color: rgba(30, 30, 30, 0.8);
 	width: 100%;
 }
 
-.description-title {
-	margin-bottom: 73px;
-}
-
-.post-content div {
+.post-content {
 	background-color: $color-main;
 	padding: 4px;
 }
 
+// About me page
 
+.about-container {
+	background: url(/img/portrait.png) top left no-repeat;
+	background-size: 300px auto;
+}
 
+.about-container {
+	text-align: justify !important;
+}
 
 

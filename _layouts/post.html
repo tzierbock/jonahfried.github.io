@@ -3,17 +3,18 @@ layout: default
 ---
 <div class="container-fluid spacer">
 
-  <div class="row">
-  	<div class="col-sm-6">
-  		<header class="post-header">
+<header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+</header>
+
+<div class="row">
+  	<div class="col-sm-6">
     	<img class="exibit-detail-image" src="{{ page.image }}?raw=1">
     </div>
   
     <article class="post-content col-sm-6">
-    	<h2 class="description-title">Description</h2>
+    	<h2>Description</h2>
       	<div>{{ content }}</div>
     </article>
   </div>
