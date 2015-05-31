@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "The Holy Bible Genisis"
+title:  "The rabbit"
 date:   2015-05-30 12:39:43
-categories: digital gallery
-image: "/img/design.png"
+categories: graphics gallery
+image: "http://heroiclifepath.com/wp-content/uploads/2014/11/Screenshot_from_IMAX%C2%AE_3D_movie_Hidden_Universe_showing_the_Helix_Nebula_in_infrared.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor nunc, placerat sodales justo ultricies, congue pretium lacus. Donec nulla magna, vehicula nec scelerisque sit amet, blandit ut dolor. Morbi a lacus ut massa ultrices varius a quis dolor. Donec ac porttitor eros. Etiam dapibus accumsan urna, vitae mollis erat placerat eget. Praesent id libero sed erat suscipit consectetur eget id odio. Morbi id rutrum mi, eget molestie justo. Nunc posuere magna nunc, ac vehicula tellus consectetur ac. Mauris id eros eros.

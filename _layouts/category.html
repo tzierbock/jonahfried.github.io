@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="showcase-wrapper">
+	<div class="showcase-wrapper-content container-fluid">
+		<div class="col-sm-12" id="slideshow">
+			    <div id="slideshow-content">
+			    	{% for post in site.posts %}
+			    		{% if post.categories contains page.category %}
+					    	<div>
+					    	<a href="{{ post.url }}">
+					    		<img src="{{ post.image }}?raw=1">
+		    			    </a>
+		    			    </div>
+		    			{% endif %}
+    			    {% endfor %}
+    	  		</div>
+			<div class="socialmedia-buttons-wrapper">
+				<div class="socialmedia-button">B</div>
+				<div class="socialmedia-button">P</div>
+				<div class="socialmedia-button">Li</div>
+				<div class="socialmedia-button">F</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<a class="col-md-3 col-sm-3 page-links" href="home.html">
+			<h2>Home</h2>
+		</a>
+		<a class="col-md-3 col-sm-3 page-links" href="#">
+			<h2>Blog</h2>
+		</a>
+		<a class="col-md-3 col-sm-3 page-links" href="#">
+			<h2>About</h2>
+		</a>
+		<a class="col-md-3 col-sm-3 page-links" href="#">
+			<h2>Commission</h2>
+		</a>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+	{% for post in site.posts %}
+		{% if post.categories contains page.category %}
+		<a class="col-sm-3 exibit-box" style="background-image: url({{ post.image }}?raw=1);" href="{{ post.url }}">
+			<div class="content">
+			<div class="pop-exibit">
+				<h1>{{ post.title }}</h1>
+				<p>{{ post.content | truncate: 100}}</p>
+			</div>
+			</div>
+		</a>
+		{% endif %}
+	{% endfor %}	
+	</div>
+</div>

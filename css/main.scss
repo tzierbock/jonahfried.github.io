@@ -46,7 +46,22 @@ $on-laptop:        800px;
     }
 }
 
-
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -278,4 +293,95 @@ $popover-color: rgba(30, 30, 30, 0.8);
 .nopadding {
 	padding-left: 0 !important;
 	padding-right: 0 !important; 
+}
+
+// Category pages
+
+.exibit-box {
+	@include aspect-ratio(1.41, 1);
+	background-size: cover;
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+
+}
+
+#slideshow {
+	position: relative;
+	top: 0;
+	left: 0;
+    width: 100%; 
+    height: 100%; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow-content > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#slideshow-content img {
+	width: 100%;
+}
+
+.pop-exibit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0) 50%, $popover-color 50%, $popover-color);
+	transition: all 0.2s ease;
+	background-size: 100% 210%;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-clip: content-box;
+}
+
+.pop-exibit h1 {
+	position: relative;
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $base-font-family bold;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+    visibility: hidden;
+    top: 100%;
+    margin: 4px;
+}
+
+.pop-exibit p {
+	position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+    visibility: hidden;
+    top: 100%;
+    color: white;
+    margin: 4px;
+}
+
+.pop-exibit:hover {
+  background-position: 100% 100%;
+  text-decoration: none !important;
+}
+
+.pop-exibit:hover h1 {
+	color: white;
+	visibility: visible;
+	top: 0;
+}
+
+.pop-exibit:hover p {
+	visibility: visible;
+	top: 0;
+	text-decoration: none !important;
 }
