@@ -70,6 +70,9 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+.spacer {
+	margin-bottom: 15px;
+}
 
 // Landing page styling
 .landing-page {
@@ -385,3 +388,23 @@ $popover-color: rgba(30, 30, 30, 0.8);
 	top: 0;
 	text-decoration: none !important;
 }
+
+// exhibit detail page
+
+.exibit-detail-image {
+	width: 100%;
+}
+
+.description-title {
+	margin-bottom: 73px;
+}
+
+.post-content div {
+	background-color: $color-main;
+	padding: 4px;
+}
+
+
+
+
+

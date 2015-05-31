@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Tool Typeography"
+title:  "Road To Reims"
 date:   2015-05-30 12:39:43
-category: design
-image: "https://www.dropbox.com/s/yk46jh8un3x6vq8/8f3163c2243d9269e463bd1c309c344a.png"
+category: gallery
+image: "https://www.dropbox.com/s/4ns08p4xq2diduo/cf2b9f4f824b5b7a1d6d13f4ac3ea7ca.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor nunc, placerat sodales justo ultricies, congue pretium lacus. Donec nulla magna, vehicula nec scelerisque sit amet, blandit ut dolor. Morbi a lacus ut massa ultrices varius a quis dolor. Donec ac porttitor eros. Etiam dapibus accumsan urna, vitae mollis erat placerat eget. Praesent id libero sed erat suscipit consectetur eget id odio. Morbi id rutrum mi, eget molestie justo. Nunc posuere magna nunc, ac vehicula tellus consectetur ac. Mauris id eros eros.

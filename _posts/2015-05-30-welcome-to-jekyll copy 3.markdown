@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "The rabbit"
+title:  "Walking The Beat"
 date:   2015-05-30 12:39:43
-categories: gallery
-image: "https://www.dropbox.com/s/1mv7wl5f3cubad8/rabbit-stats_490.jpg"
+category: digital
+image: "https://www.dropbox.com/s/5kd40ncmnkp5dn0/33c9ba65fc6cf5c7bb8d353f72aa16e5.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor nunc, placerat sodales justo ultricies, congue pretium lacus. Donec nulla magna, vehicula nec scelerisque sit amet, blandit ut dolor. Morbi a lacus ut massa ultrices varius a quis dolor. Donec ac porttitor eros. Etiam dapibus accumsan urna, vitae mollis erat placerat eget. Praesent id libero sed erat suscipit consectetur eget id odio. Morbi id rutrum mi, eget molestie justo. Nunc posuere magna nunc, ac vehicula tellus consectetur ac. Mauris id eros eros.

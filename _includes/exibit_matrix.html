@@ -1,0 +1,16 @@
+<div class="container-fluid">
+	<div class="row">
+	{% for post in site.posts %}
+		{% if post.categories contains page.category %}
+		<a class="col-sm-3 exibit-box" style="background-image: url({{ post.image }}?raw=1);" href="{{ post.url }}">
+			<div class="content">
+			<div class="pop-exibit">
+				<h1>{{ post.title }}</h1>
+				<p>{{ post.content | truncate: 100}}</p>
+			</div>
+			</div>
+		</a>
+		{% endif %}
+	{% endfor %}	
+	</div>
+</div>
