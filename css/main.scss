@@ -405,10 +405,62 @@ $popover-color: rgba(30, 30, 30, 0.8);
 .about-container {
 	background: url(/img/portrait.png) top left no-repeat;
 	background-size: 300px auto;
+	min-height: 950px;
 }
 
 .about-container {
 	text-align: justify !important;
 }
 
+// Social media
+
+#shareContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 115px;
+}
+
+#shareContainer ul {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style-position: inside;
+}
+
+#shareContainer ul li {
+  margin-left: 4px;
+  display: inline-block;
+}
+
+#shareContainer li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('/img/spritesheet-share-icons.png');
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+a.facebook {
+  background-position: left top;
+}
+
+#shareContainer li a.pinterest {
+  background-position: -80px top;
+}
+
+#shareContainer li a.youtube {
+  background-position: -200px top;
+}
+
+#shareContainer li a.linkedin {
+  background-position: -240px top;
+}
+
+#shareContainer li a.pinterest {
+  background-position: -80px top;
+}
 
