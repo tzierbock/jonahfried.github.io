@@ -10,7 +10,9 @@ url: "http://jonahf.co.uk" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jonahfried
 
+# Title image
+title-image: placeholder
+title-image-description: some text
+
 # Build settings
 markdown: kramdown
-
-host: 0.0.0.0
