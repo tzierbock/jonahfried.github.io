@@ -4,4 +4,4 @@ title: Commission
 permalink: /commission/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor nunc, placerat sodales justo ultricies, congue pretium lacus. Donec nulla magna, vehicula nec scelerisque sit amet, blandit ut dolor. Morbi a lacus ut massa ultrices varius a quis dolor. Donec ac porttitor eros. Etiam dapibus accumsan urna, vitae mollis erat placerat eget. Praesent id libero sed erat suscipit consectetur eget id odio. Morbi id rutrum mi, eget molestie justo. Nunc posuere magna nunc, ac vehicula tellus consectetur ac. Mauris id eros eros.
+The purpose of this website is to let people explore my work and to give feedback but also for people to contact if they are interested. If you haven't already seen the blog it is new but I intend on using it to keep people up to date with my current event. The commision page is to easily allow people to ask question. I will respond to all email, no question is too silly no matter how bad it sounds. I hope you have enjoyed this website up till now. 
